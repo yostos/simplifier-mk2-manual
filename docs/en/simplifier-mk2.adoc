@@ -1,0 +1,319 @@
+= DSM HUMBOLDT SIMPLIFIER MKII MANUAL
+:toc: left
+:toc-title: Table Of Contents
+:toclevel: 4
+:imagesdir: ../images
+:figure-caption: figure
+:chapter-signifier:
+:scripts: cjk
+:pdf-theme: default-with-font-fallbacks
+:doctype: book
+:sectnumlevels: 4
+:sectnums:
+:source-highlighter: rouge
+:rouge-style: gruvbox
+
+Thank you for acquiring the Simplifier MKII, the most advanced analog amp emulation device.
+
+== Main Features
+
+The Simplifier MKII is an all analog, zero-watt guitar amplifier with stereo reverb, fully packed
+with routing and tone sculpting options. These features include:
+
+* Preamp with 3 amp types (MS Brit, USA, and AC Brit).
+* Stereo FX loop Return.
+* Stereo Reverb.
+* Power amp simulation with Power amp Type, Power amp Drive, presence and resonance.
+* Cabinet simulation with cab type and Speaker color for each channel.
+* Two Balanced DI outs with ground lift.
+* Powerful headphone amplifier with volume control and aux input.
+
+== Signal Flow Schematic
+
+.Signal Flow
+image::signal-flow.png[scaledwidth="100%",align="center"]
+
+== Preamp Section
+
+The Simplifier MKII features a state of the art, low noise, and ultra versatile preamp that
+reproduces the character of 3 of the most iconic classic amplifiers.
+
+=== Gain Knob
+
+Sets the gain/overdrive of the preamp. It ranges from very clean (below noon), up to mid/high
+gain at full throttle. Combine this gain with the power amp gain to achieve the desired level of
+compression and drive.
+
+=== PreAmp Type
+
+Selects the following Amp Types:
+
+* AC BRIT : Classic AC30 top boost sparkly and three-dimensional sound,
+  bridging the normal and bright channel. A true British heritage since the
+  60's.
+* USA: Classic Bassman tones. Sweet and dynamic with a balanced response. By
+  far the most used amp on studio recordings.
+* MS BRIT : Classic clean-to-crunch vintage plexi style amp with bridged
+  hi/lo inputs. The sound that defined rock music.
+
+=== Tone Stack
+
+A key part of a tube amp sound and response is the tone stack behavior. The tone stack on the
+Simplifier is a genuine configurable three band classic amplifier topology, keeping the same feel,
+response and interaction of the original amp.
+
+[NOTE]
+====
+On the AC BRIT type preamp, the MID control is disabled (as the
+original amp does not have a mid control)
+====
+
+== Power Amp Section
+
+The Power amp section models the behavior of a true push-pull all tube amp, including the
+compression, clipping, bias drift and variable frequency response that makes Tube power amps
+so special.
+
+The *Power amp* type selector now changes the whole topology of each power amp, changing
+the tube type, bias and feedback characteristics of each model.
+
+=== Power Drive Knob
+
+The *power amp drive* allows you to dial the perfect amount of power amp compression for that
+sweet-spot that only a tube amp can achieve. A Clip indicator will visually show when the virtual
+power tubes start clipping, helping you find the perfect balance between pre and power amp
+gain.
+
+Complement your preamp gain with this Power Drive. Low preamp gain needs high power drive
+to make up the volume loss and add sweetness to the tone. Mild clipping preamp tones benefit a
+lot from a compressing power amp, which softens the transients and adds body to the final tone.
+High preamp gains are also modulated by the power drive. Lower the power drive for tighter,
+brighter tones, and raise it for singing, creamier tones, and find the sweet spot for your guitar
+where you get the best of both worlds and can control the distortion with the guitar volume
+control.
+
+=== Power Type Switch
+
+The Power type switch selects between 3 power amp types:
+
+* AC BRIT : Very hot biased class AB amplifier with no feedback, based on
+  the venerable AC30 power amp. Big low end and low headroom with a response
+  that varies from scooped on clean settings, to mid rich when pushed, and
+  this happens dynamically. Very dynamic response.
+* USA: Class AB 6L6GC with a lot of feedback. Very flat and balanced, but it
+  screams when overdriven.
+- MS Brit: Class AB EL34 with less feedback. Rich low-mids, and responds
+  more consistently to overdrive.
+
+=== Presence Knob
+
+The presence knob is implemented just like the real amps. It works by reducing the high end
+feedback, thus boosting the treble into the power amp. If AC Brit power amp type is selected, the
+presence acts as the High cut control, like the original amps.
+
+=== Resonance knob
+
+The resonance controls the amount of low end feedback into the power amp. Although this
+control is not present on the original amps, we added it to allow the user to adjust the low end
+response to different PA speaker sizes to avoid boominess. Use it at max for the original amp
+tone.
+
+=== Level Knob
+
+The Level Knob controls the final level into the FX loop.
+
+== Effects Loop
+
+The Simplifier MKII features a mono Send/Stereo Return effects loop. If only the RIGHT return is
+used, the LEFT channel will take the RIGHT signal. If Only the LEFT return is used, the RIGHT
+signal will not be affected.
+
+=== FX Send
+
+The FX send is a mono TS jack. The level is controlled by the Level knob. Adjust this control
+according to the input level of the effects you put on the loop. If the effects clip, reduce the Level.
+
+=== FX Return R
+
+The FX Return R jack is the input for the Right channel Reverb and Cabinet Simulator path. If
+only the RIGHT return is used, the LEFT channel will take the RIGHT signal.
+
+=== FX Return L
+
+The FX Return L jack is the input for the Right channel Reverb and Cabinet Simulator path. If
+Only the LEFT return is used, the RIGHT signal will not be affected.
+
+== Reverb
+
+The Simplifier MKII integrates a lush stereo digital plate reverb with Reverb mix control.
+
+=== Reverb Knob
+
+The Reverb knob controls the reverb mix for both channels.
+
+== Cabinet simulation
+
+Tweakable Cabinet simulator that takes the heritage and experience of ©DSM Noisemaker
+developing the most useful and innovative cabsims of the market. You can easily dial two
+independent cabinet simulators panned LEFT - RIGHT .
+
+=== Cab Type Switch
+
+A three way toggle switch allows you to choose independent cabinet STYLE for each side. 1x12
+Combo, 2x12 or big 4x12 cabinet simulations that you can combine with any of the 3 preamps
+per channel, adding an extra dimension to your sound development. Now you can combine the
+different Cabinet sizes with different speaker types (Eminence blackface, Celestion Blue Alnico,
+Celestion Greenbacks, or even the points between them).
+
+=== Speaker Color Knob
+
+The speaker color knob sweeps between the characteristic high-mid response of the different
+speaker type. This control is crucial to get the desired texture out from the cabinet. Black is
+based on vintage Eminence high power speakers, typical of fender combos. These are smooth
+and balanced, great to compensate for the shrill from single coils and fender preamps. Blue is
+based on alnico blue speakers, midrangey and defined, but not harsh. And Green is based on
+greenbacks, great for those marshall jangly tones, or extra definition is required.
+
+
+== Outputs
+=== Right and Left Balanced DI outputs:
+
+Low Impedance (150 Ohms) XLR outputs for left and right signals, with Ground Lift. These
+outputs carry the final output with cabsim always ON.
+
+
+[NOTE]
+====
+The DI outs can withstand phantom power voltage without damage, but it will affect the
+quality of the sound, mainly causing low-end distortion and/or lack of bass frequencies. Make
+sure to have Phantom Power Off before using the unit.
+====
+
+=== Right ¼" Unbalanced out:
+Unbalanced TS output for right signal. You can Bypass the cabinet simulation for the Right side
+with the "Cabsim Bypass" switch. If Cabsim is Bypassed, the signal will include Preamp + FX
+loop + Reverb stages.
+
+=== Left ¼" Unbalanced:
+Unbalanced TS output for Left signal. You can Bypass the whole device with the "Through"
+switch. If "Through" is selected, the signal will be taken from the input and buffered
+
+== Headphone amp
+
+The unit includes a powerful 135mW stereo headphone amplifier with stereo AUX input, for those
+silent late night practice sessions, or even in-ear monitoring.
+The Amplifier works best with Headphones between 32 and 96 Ohms
+
+[NOTE]
+====
+Ground noise issues may occur if the power supply used is not referenced directly to
+ground when using only headphones. Since the device will not have a reference to earth
+potential, unwanted noise may occur. Please use a ground referenced supply, a battery pack, or
+simply connect any output to a device that is connected to earth (like an amp or mixer input, even
+if powered off).
+====
+
+== Sample Settings
+
+=== Clean USA
+
+.Clean USA
+image::clean-usa.png[scaledwidth="100%",align="center"]
+
+=== Melting USA
+
+.Melting USA
+image::melting-usa.png[scaledwidth="100%",align="center"]
+
+=== Bluesy USA
+
+.Bluesy USA
+image::bluesy-usa.png[scaledwidth="100%",align="center"]
+
+=== Crispy AC
+
+.Crispy AC
+image::crispy-ac.png[scaledwidth="100%",align="center"]
+
+=== Elevation AC
+
+.Elevation AC
+image::elevation-ac.png[scaledwidth="100%",align="center"]
+
+=== Queen AC
+
+.Queen AC
+image::queen-ac.png[scaledwidth="100%",align="center"]
+
+=== Clean MS
+
+.Clean MS
+image::clean-ms.png[scaledwidth="100%",align="center"]
+
+=== Hair MS
+
+.Hair MS
+image::hair-ms.png[scaledwidth="100%",align="center"]
+
+=== 70's MS
+
+.70's MS
+image::70s-ms.png[scaledwidth="100%",align="center"]
+
+=== Big Smooth Custom
+
+.Big Smooth Custom
+image::big-smooth-custom.png[scaledwidth="100%",align="center"]
+
+=== Purple Mix
+
+.Purple Mix
+image::purple-mix.png[scaledwidth="100%",align="center"]
+
+== Tech Specs
+
+* Weight: 360 grs (0,8 lb)
+* Dimensions: 120 x 70 x 45 mm (4,7 x 2,7 x 1,8 inches)
+* Power supply requirements:
+** Voltage: 9 to 18V DC regulated
+*** Connector: 2.1mm DC jack, Center negative
+*** Current consumption: 120mA
+*** Recommended supply current: 200mA and up
+* Input Impedance:
+**Input: 1Meg Ohm
+** L & R return: 1Meg Ohm
+* Output impedance:
+** Send: 1K Ohm
+** Unbalanced Outputs: 4.7K Ohms
+** Balanced Outputs: 100 Ohms
+* Headphone amp specs:
+** Power: 135mW into 32 Ohms.
+* Use with 16, 32, 64 and 96 Ohm Headphones. Loss of power can occur with
+  higher impedance headphones.
+
+== Powering up
+
+Before powering up the unit, turn down the receiving device (PA, interface, headphones, etc) in
+order to avoid power up "pop"
+.
+The best way to power up a Simplifier, is to use a 9V REGULATED DC adapter, make sure you
+are using a clean voltage source and you are not daisy chaining the power supply with high
+current digital units.
+
+===  Recommended Power supply:
+
+The Power supply specs should be:
+* 9V to 12V DC voltage
+* Regulated (designed for low noise, musical instruments use)
+* 150 mA minimum current rating. You can use higher current rating supplies.
+* Center negative.
+
+Do not use cheap wall wart adapters not intended for pedal use. These are not filtered or
+regulated and will introduce hum and other unwanted noises.
+
+[CAUTION]
+====
+DO NOT USE CENTER POSITIVE SUPPLIES, IT MAY DAMAGE THE UNIT AND IT WILL
+NOT BE COVERED BY WARRANTY. PLEASE MAKE SURE THE POLARITY IS CORRECT
+BEFORE POWERING UP.
+====

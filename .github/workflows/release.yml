@@ -1,0 +1,39 @@
+name: Generate PDFs and Release
+
+on:
+  push:
+    tags:
+      - "v*"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: "3.0"
+          bundler-cache: true
+
+      - name: Install Asciidoctor-PDF
+        run: gem install asciidoctor-pdf
+
+      - name: Generate English PDF
+        run: asciidoctor-pdf docs/en/simplifier-mk2.adoc -o simplifier-mk2-en.pdf
+
+      - name: Generate Japanese PDF
+        run: asciidoctor-pdf docs/ja/simplifer-mk2.adoc -o simplifier-mk2-ja.pdf
+
+      - name: Create Release
+        id: create_release
+        uses: softprops/action-gh-release@v1
+        with:
+          files: |
+            simplifier-mk2-en.pdf
+            simplifier-mk2-ja.pdf
+          draft: false
+          prerelease: false
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

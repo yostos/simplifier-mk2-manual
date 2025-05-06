@@ -2,7 +2,7 @@
 :toc: left
 :toc-title: 目次
 :toclevel: 4
-:imagesdir: ./images
+:imagesdir: ../images
 :figure-caption: 図
 :chapter-signifier:
 :scripts: cjk

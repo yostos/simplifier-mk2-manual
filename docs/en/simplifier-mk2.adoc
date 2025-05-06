@@ -2,7 +2,7 @@
 :toc: left
 :toc-title: Table Of Contents
 :toclevel: 4
-:imagesdir: ./images
+:imagesdir: ../images
 :figure-caption: figure
 :chapter-signifier:
 :scripts: cjk
